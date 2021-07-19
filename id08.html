@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>id08</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+
+body{
+	margin:0;
+	background-color: lightgrey;
+}
+
+/* HEADER COUCH DUMBELL*/
+
+.header {
+	border: 10px solid red;
+	color: red;
+	background-color: green;
+	padding : 25px;
+	text-align:center;
+}
+
+/* LOGIN*/
+
+.Loginform{
+	float: right;
+	border: none;
+	position: absolute;
+	background-color: red;
+	color: green;
+	padding: 16px;
+	font-size: 16px;
+	text-align: center;
+	top: 50px;
+	right: 50px;
+}
+
+.heading{
+	text-align: center;
+
+}
+
+
+.main{
+	display: flex;
+}
+
+.slideshow{
+	flex: 60%;
+	position: relative;
+	margin: 30px;
+}
+
+.description{
+	flex: 40%;
+	background-color: white;
+	padding: 10px;
+	margin:30px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.btn-hf{
+	background-color: green;
+	color: red;
+	margin-left: 50px;
+	padding: 10px;
+	border-color: red;
+	border-radius: 20px;
+}
+
+.facilities{
+	background-color: white;
+	padding: 25px;
+	margin:30px;
+}
+
+</style>
+
+</head>
+<body>
+	
+	<!--HEADER-->
+
+	<div class="header">
+   		<h1>HOUREN</h1>
+   		<div>
+   			<button class="Loginform" onclick="document.getElementById('lf01').style.display='block'" style="width:auto; float:right;">Login</button>
+   		</div>
+	</div>
+
+	<div class="heading">
+		<h1>  3 BHK residential apartment for rent in Pandaripuram for ₹14000, Ongole</h1>
+
+	</div>
+
+
+	<div class="main">
+
+		<div class="slideshow">
+			<div class="Slides">
+    			<img src="C:\Users\manid\Desktop\hra photos\ih-2.png" style="width:100%;min-height: 600px;">
+  			</div>
+			<div class="Slides">
+    			<img src="C:\Users\manid\Desktop\hra photos\hall\hall-8.jpg" style="width:100%;max-height: 600px;">
+  			</div>
+  			<div class="Slides">
+    			<img src="C:\Users\manid\Desktop\hra photos\bedroom\bed-8.jpg" style="width:100%;max-height: 600px;">
+  			</div>
+  			<div class="Slides">
+    			<img src="C:\Users\manid\Desktop\hra photos\kitchen\kitch-8.jpg" style="width:100%; max-height: 600px;">
+  			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+
+		<div class="description">
+			<h2>3 BHK residential apartment for rent in Pandaripuram for ₹14000, Ongole</h2>
+			<h3> 3 bedrooms | 3 bathrooms | 1 kitchen | 1 pooja room</h3>
+			<h2 style="margin-top: 35px;"> Rent : ₹14000</h2>
+			<h3 style="margin-top:35px; "> HOUSE FOR : </h3>
+			<button class="btn-hf"><b>FAMILY</b></button>
+			<button class="btn-hf"><b>BACHELOR</b></button>
+			<button class="btn-hf"><b>SHOP/COMPANY</b></button>
+			<h2> Area: 2800sq.ft</h2>
+			<h2>Furnishing Status : Furnished</h2>
+			<h2> Age Of Property : 1-2 years old</h2>
+			<h2> Type Of Property : Independent Floor</h2>
+			<h2> Address : Pandareepuram, Anjaiah road</h2>
+		</div>
+	</div>
+
+	<div class="facilities">
+		<h1> Facilities</h1>
+		<div style="display: flex;">
+			<i class="material-icons" style="font-size:48px;color:red; flex: 5%">local_parking</i>
+			<h2 style="flex: 15%; margin-top: 5px; margin-left:-50px; ">Parking</h2>
+			<i class="material-icons" style="font-size:36px;color:red; flex: 5%">wifi</i>
+			<h2 style="flex: 15%; margin-top: 5px; margin-left:-50px; ">Wifi</h2>
+			<i class="material-icons" style="font-size:36px;color:red; flex: 5%">admin_panel_settings</i>
+			<h2 style="flex: 15%; margin-top: 5px; margin-left:-50px; ">Security Personal</h2>
+			<i class="material-icons" style="font-size:36px;color:red; flex: 5%">park</i>
+			<h2 style="flex: 15%; margin-top: 5px; margin-left:-50px; ">Park</h2>				
+		</div>
+		<br>
+		<br>
+		<div style="display: flex;  ">
+			<i class="material-icons" style="font-size:36px;color:red; flex: 5%">pool</i>
+			<h2 style="flex: 15%; margin-top: 5px; margin-left:-50px; ">Pool</h2>
+			<i class="material-icons" style="font-size:36px;color:red; flex: 5%">fitness_center</i>
+			<h2 style="flex: 15%; margin-top: 5px; margin-left:-50px; ">GYM</h2>
+			<i class="material-icons" style="font-size:36px;color:red; flex: 5%">elevator</i>
+			<h2 style="flex: 15%; margin-top: 5px; margin-left:-50px; ">Lift</h2>
+			<i class="material-icons" style="font-size:36px;color:red; flex: 5%">handyman</i>
+			<h2 style="flex: 15%; margin-top: 5px; margin-left:-50px; ">Maintainance Staff</h2>
+		</div>
+		<br>
+
+		<hr>
+
+		<div style="display: flex;  ">
+			<p style="flex: 25%; margin-top: 25px; font-size:20px;">Facing : <b>South</b> </p>
+			<p style="flex: 25%; margin-top: 25px; font-size:20px;">Floor Number :<b>3rd of 4 floors</b></p>
+			<p style="flex: 25%; margin-top: 25px; font-size:20px;">Corner Property : <b>Yes</b></p>
+			<p style="flex: 25%; margin-top: 25px; font-size:20px;">Parking : <b>1 covered</b></p>
+		</div>
+		
+
+		<div style="display: flex;  ">
+			<p style="flex: 25%; margin-top: 5px; font-size:20px;">Power-Backup : <b>Partial</b> </p>
+			<p style="flex: 25%; margin-top: 5px; font-size:20px;">Rent Agreement Duration : <b>18 months</b></p>
+			<p style="flex: 25%; margin-top: 5px; font-size:20px;">Property-Age : <b>1 - 2 Years old</b></p>
+			<p style="flex: 25%; margin-top: 5px; font-size:20px;">Electricity & Water charges :<br><b>Charges Not included</b></p>
+		</div>
+
+		<div style="display: flex;  ">
+			<p style="flex: 25%; margin-top: 5px; font-size:20px;">Pet-friendly : <b>Yes</b> </p>
+			<p style="flex: 25%; margin-top: 5px; font-size:20px;">Flooring : <b>Marble</b></p>
+			<p style="flex: 25%; margin-top: 5px; font-size:20px;">Available from : <b>Within 30 days</b></p>
+			<p style="flex: 25%; margin-top: 5px; font-size:20px;">HRA Code :<b>ONGIF008</b></p>
+		</div>
+		<br>
+		<hr>
+
+		<div>
+			<h2> About Property</h2>
+			<p style="font-size: 20px;"><b>Address</b>: Pandareepuram, Anjaiah Road, Ongole, A.P </p>
+			<p style="font-size: 20px;">Close to all the car showrooms ( Mahindra, hyundai, ford & maruthi, nexa)</p>
+			<p style="font-size: 20px;">Just next to Bypass</p>
+			<p style="font-size: 20px;">Located in a peaceful & lush green zone</p>
+			<p style="font-size: 20px;">4 sides ventilation</p>
+			<p style="font-size: 20px;">Wide & bigger rooms</p>
+		</div>
+	</div>
+
+<script >
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("Slides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
